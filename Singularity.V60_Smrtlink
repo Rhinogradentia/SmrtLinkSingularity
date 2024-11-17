@@ -14,6 +14,7 @@ Please invoke PB tools using "singularity exec --bind $PWD thisImage.img myComma
 valid ones are e.g.: blasr,quiver,pbalign,isoseq3,....
 
 %setup
+# https://downloads.pacbcloud.com/public/software/installers/smrtlink_6.0.0.47841.zip
 cp smrtlink_6.0.0.47841.zip $SINGULARITY_ROOTFS
 	
 %post
