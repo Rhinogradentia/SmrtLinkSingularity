@@ -20,6 +20,7 @@ cp smrtlink_6.0.0.47841.zip $SINGULARITY_ROOTFS
 %post
 
 # correct package sources
+# source https://www.tecmint.com/error-failed-to-download-metadata-for-repo-appstream/
 sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
 sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
 
